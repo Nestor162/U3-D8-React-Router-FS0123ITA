@@ -5,9 +5,10 @@ import NetflixNav from "./components/NetflixNav";
 import MainContent from "./components/MainContent";
 import NetflixFooter from "./components/NetflixFooter";
 import AccountPage from "./components/AccountPage";
-import SettingsPage from "./components/settingsPage";
+import SettingsPage from "./components/SettingsPage";
 import NotFound from "./components/NotFound";
 import TVShows from "./components/TVShows";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/account" element={<AccountPage />} />
           <Route path="/tv-shows" element={<TVShows />} />
+          <Route path="/movie-details/:movieId" element={<MovieDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

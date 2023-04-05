@@ -1,12 +1,14 @@
-## Netflix in React
+## Navigazione per Neftlix React
 
-**Oggi la tua sfida riguarderà il refactoring della homepage del tuo progetto Netflix in JavaScript (U2-W2-D5).
-Dovrà diventare un’applicazione React con fetch dei dati da “The Open Movie Database”.**
+## **In questo esercizio applicherai le nuove conoscenze riguardo il react-router-dom alla tua app Netflix. Ricorda di installare il pacchetto npm con** `**npm i react-router-dom**`
 
-Passaggi suggeriti:
+1.  Crea una Route per un componente **TVShows**. Una semplice rotta statica, senza parametri. Monta in questa pagina un componente a tua scelta. Es. `/tv-shows`
+2.  Aggiungi un Link alla pagina **TVShows** nella Navbar dell’applicazione, per navigarci comodamente.
+3.  Crea una Route parametrica per montare un componente **MovieDetails**. Dovrà permettere di ricevere un parametro `id` dalla URL. Es. `/movie-details/:movieId`
+4.  Crea il componente **MovieDetails** per visualizzare i dettagli e i commenti del singolo film. Queste informazioni dovranno essere ottenute da delle fetch ogni qualvolta il componente **MovieDetails** verrà montato; avrai bisogno di prelevare il `movieId` dall’URL (per recuperare sia i dettagli del film sia i suoi commenti sarà necessario effettuare due fetch: una a omdbAPI e una alle nostre API interne)
+5.  In ogni componente **SingleMovie** aggiungi un bottone; servirà per per navigare alla sua pagina di dettaglio, sfruttando la rotta parametrica creata sopra. Inserisci l’`id` del film nell’URL.
 
-- Crea una nuova react-app, e a partire dal progetto Netflix fornito comincia a trasportare l’interfaccia della home page tramite componenti React (navbar, footer, etc.)
-- Crea, usando componenti, diverse “gallerie” per i film (almeno 3 gallerie con 3 film saga che ti piacciono, esempio: Harry Potter, Lord of the Rings ecc.)
-- Queste gallerie dovranno fare il fetch dei dati da Omdb APIs al caricamento del componente
-- [EXTRA] Aggiungi dei loader e gestione errori nella pagina principale
-- [EXTRA] una volta finito il resto, fai il refactor anche delle altre pagine: account, settings.
+#### EXTRA
+
+- Cambia il comportamento della SearchBar: se l’utente è sulla pagina **TVShows**, il placeholder dovrà diventare: “Cerca Serie TV…”
+- Se non l’hai già fatto, migliora la navigazione aggiungendo loaders e gestione errori

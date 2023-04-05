@@ -62,9 +62,10 @@ const MovieDetails = () => {
               <Card.Img variant="top" src={movie.Poster} className="ms-3" />
             </Col>
             <Col xs={8}>
-              <Card.Body>
+              <Card.Body className="pb-0">
                 <Card.Title className="fs-3 fw-bold">{movie.Title}</Card.Title>
                 <Card.Text>{movie.Plot}</Card.Text>
+                <h4 className="mt-4">Comments:</h4>
               </Card.Body>
               {comments.length > 0 ? (
                 <ListGroup>

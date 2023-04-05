@@ -3,10 +3,11 @@ import logo from "../img/netflix_logo.png";
 import avatar from "../img/avatar.png";
 import kids from "../img/kids_icon.png";
 import { Search, Bell } from "react-bootstrap-icons";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const NetflixNav = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   return (
     <Navbar expand="lg" variant="dark" className="px-4">
       <Container fluid>
@@ -53,10 +54,20 @@ const NetflixNav = () => {
 
               <hr className="dropdown-divider" />
 
-              <NavDropdown.Item className="text-light" href="#">
+              <NavDropdown.Item
+                className="text-light"
+                onClick={() => {
+                  navigate("/account");
+                }}
+              >
                 Edit Profile
               </NavDropdown.Item>
-              <NavDropdown.Item className="text-light" href="#">
+              <NavDropdown.Item
+                className="text-light"
+                onClick={() => {
+                  navigate("/settings");
+                }}
+              >
                 Account
               </NavDropdown.Item>
               <NavDropdown.Item className="text-light" href="#">

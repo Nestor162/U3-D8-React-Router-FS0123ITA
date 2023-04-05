@@ -7,6 +7,7 @@ import NetflixFooter from "./components/NetflixFooter";
 import AccountPage from "./components/AccountPage";
 import SettingsPage from "./components/settingsPage";
 import NotFound from "./components/NotFound";
+import TVShows from "./components/TVShows";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<MainContent />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/account" element={<AccountPage />} />
+          <Route path="/tv-shows" element={<TVShows />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

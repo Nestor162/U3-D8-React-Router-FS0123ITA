@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Spinner } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 class MovieCards extends Component {
   state = {
@@ -37,11 +38,11 @@ class MovieCards extends Component {
         )}
 
         {this.state.movies.slice(0, 6).map((movie, i) => (
-          <div className="col-xl-2 col-md-4 pb-2 col-sm-6 px-1" key={i}>
+          <Link to={"/movie-details/" + movie.imdbID} className="col-xl-2 col-md-4 pb-2 col-sm-6 px-1" key={i}>
             <div className="ImgContainer">
               <img className="img-fluid ImgCard" src={movie.Poster} alt={movie.title} />
             </div>
-          </div>
+          </Link>
         ))}
       </>
     );

@@ -1,0 +1,68 @@
+.App {
+  background-color: #141414;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+.dropdown-menu.show {
+  position: absolute;
+  left: -107px;
+  background-color: #343a40;
+}
+
+.dropdown-item:hover {
+  color: #000 !important;
+}
+
+.ImgContainer {
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.ImgCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background-color: black;
+  position: absolute;
+  width: 45px;
+}
+
+.customSpinner {
+  display: flex;
+  justify-content: center;
+}
+
+.ps-2rem {
+  padding-left: 52px;
+}
+
+.custom-container {
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+#custom-check {
+  background-color: transparent;
+  border: solid 2px gray;
+  padding: 10px;
+  margin-right: 7px;
+}
+
+.form-check-label {
+  max-width: 260px;
+}

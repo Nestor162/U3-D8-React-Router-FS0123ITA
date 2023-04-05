@@ -10,41 +10,30 @@ const NetflixNav = () => {
   return (
     <Navbar expand="lg" variant="dark" className="px-4">
       <Container fluid>
-        <Navbar.Brand href="#">
-          <img src={logo} alt="Netflix Logo" width="148px" />
+        <Navbar.Brand>
+          <Link to="/">
+            <img src={logo} alt="Netflix Logo" width="148px" />
+          </Link>
         </Navbar.Brand>
 
         <Navbar.Collapse id="mainNav">
           <Nav className="me-auto mb-2 mb-lg-0">
-            <Link href="#" className={`nav-link ${location.pathname === "/" ? "active fw-bold" : ""}`} to="/">
+            <Link className={`nav-link ${location.pathname === "/" ? "active fw-bold" : ""}`} to="/">
               Home
             </Link>
-            <Link
-              href="#"
-              className={`nav-link ${location.pathname === "/tv-shows" ? "active fw-bold" : ""}`}
-              to="/tv-shows"
-            >
+            <Link className={`nav-link ${location.pathname === "/tv-shows" ? "active fw-bold" : ""}`} to="/tv-shows">
               TV Shows
             </Link>
-            <Link
-              href="#"
-              className={`nav-link ${location.pathname === "/movies" ? "active fw-bold" : ""}`}
-              to="/movies"
-            >
+            <Link className={`nav-link ${location.pathname === "/movies" ? "active fw-bold" : ""}`} to="/movies">
               Movies
             </Link>
             <Link
-              href="#"
               className={`nav-link ${location.pathname === "/recently-added" ? "active fw-bold" : ""}`}
               to="/recently-added"
             >
               Recently Added
             </Link>
-            <Link
-              href="#"
-              className={`nav-link ${location.pathname === "/my-list" ? "active fw-bold" : ""}`}
-              to="/my-list"
-            >
+            <Link className={`nav-link ${location.pathname === "/my-list" ? "active fw-bold" : ""}`} to="/my-list">
               My List
             </Link>
           </Nav>

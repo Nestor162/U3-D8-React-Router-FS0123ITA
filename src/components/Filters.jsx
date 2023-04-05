@@ -5,7 +5,7 @@ const Filters = () => (
   <Container id="filters">
     <Navbar className="px-4alt py-3 justify-content-between">
       <div className="d-flex gap-5 align-items-center ">
-        <h2 className="fw-bold text-light">TV Shows</h2>
+        <h2 className="fw-bold text-light">Home</h2>
         <Dropdown>
           <Dropdown.Toggle variant="dark" id="dropdown-basic" className="border border-white rounded-1">
             Genres
